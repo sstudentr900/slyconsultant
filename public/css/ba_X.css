@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&family=Noto+Serif+TC:wght@300;500;700;900&display=swap');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    /* font-family: Helvetica, Arila, "LiHei Pro", "Microsoft JhengHei", "新細明體", serif; */
+    font-family: 'Noto Sans TC',sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#444;
+    font-size: 16px;
+    position: relative;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 86%;
+    max-width: 1200px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+img {
+    border: 0;
+    /* width: 100%;
+    height: auto; */
+    display: block;
+    /*li 間隙*/
+}
+
+a {
+    /* font-size: 16px; */
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+/* h2 {
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+}*/
+
+small {
+    font-size: 12px;
+}
+
+textarea:focus,
+input:focus{
+    outline: none;
+}
+
+.publicFlex{
+    display: flex;
+}
+
+
+/*publicform --------------------------------------------------------------------*/
+/*puplicPasswordEye 密碼顯示*/
+.puplicPasswordEye{
+  position: absolute;
+  right: 12px;
+  top: 13px;
+  cursor: pointer;
+}
+.puplicPasswordEye svg{
+  fill: #777;
+}
+.puplicPasswordEye.active svg:nth-child(1),
+.puplicPasswordEye svg:nth-child(2){
+  display: none;
+}
+.puplicPasswordEye.active svg:nth-child(2){
+  display: block;
+}
+
+/*puplicError 錯誤訊息*/
+.puplicError{
+  font-size: 12px;
+  font-family: 'Noto Sans TC',sans-serif;
+  /* letter-spacing: 1px; */
+  font-weight: 100;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: red;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/*puplicRequired 必填*/
+.puplicRequired{
+  color: red;
+}
+
+
+
+/*publicBtn 按鈕*/
+/* .publicBtn{
+  color: #fff;
+  background-color: #A1804C;
+  border: 1px solid #A1804C;
+  padding: 8px 20px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.publicform .publicBtn:nth-child(1){
+  background: none;
+  color: #666;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+.publicform .publicBtn:nth-child(1):hover{
+  color: #fff;
+  background-color: #A1804C;
+  border: 1px solid #A1804C;
+} */
+
+
+/* .publicform{
+  overflow: hidden;
+  z-index: 10;
+  background: #fff;
+  padding: 30px;
+  position: absolute;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+  margin: 60px 0;
+  max-width: 500px;
+  width: 100%;
+}
+.publicform .title h3{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: noto sans tc,sans-serif;
+}
+.publicform .title p{
+    margin-top: 5px;
+    font-family: 'Noto Sans TC',sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.publicform .title i{
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+.publicform .title i svg{
+    fill: #467ca8;
+    width: 30px;
+    height: auto;
+} */
+/* .publicform  button{
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background: #9E7650;
+    border: 1px solid #A1804C;
+    border-radius: 3px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+} */
+/* .publicform li{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+.publicform li label{
+  flex: 0 0 100px;
+} */
+/* .publicform li label+div{
+  flex: 1 1;
+  display: flex;
+} */
+/* .publicform  textarea:focus,
+.publicform  select:focus,
+.publicform  input:focus{
+    outline: none;
+} */
+
+
+
+/* .publicform textarea,
+.publicform select,
+.publicform input[type='email'],
+.publicform input[type='password'],
+.publicform input[type='text']{
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+}
+.publicform select{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23454056' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 30px;
+}
+.publicform textarea{
+    min-height: 120px;
+}
+.publicform label{
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Noto Sans TC',sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.publicform .bottom{
+  display: flex;
+  justify-content: end;
+  margin-top: 40px;
+}
+.publicform .bottom button{
+  width: auto;
+  padding: 8px 20px;
+}
+
+/*publicRadio*/
+/* .publicRadio{
+    display: flex;
+}
+.publicRadio .radio{
+    display: flex;
+    align-items: center;
+}
+.publicRadio .radio+.radio{
+    margin-left: 10px;
+} */
+/*publicImg 封面圖片*/
+/* .publicImg{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #ced4da;
+    position: relative;
+    display: inline-block;
+    flex: 0 0 120px;
+}
+.publicImg label{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.publicImg label span{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.publicImg input{
+    display: none;
+}
+.publicImg .img{
+    width: 100%;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 118px;
+}
+.publicImg .img img{
+  width: 100%;
+  height: auto;
+  max-width: 110px;
+  max-height: 110px;
+  object-fit: contain;
+}
+.publicImg i{
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #ced4da;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.publicImg i svg{
+    fill: #777;
+} */
+
+/*publicAppendix 附件*/
+/* .publicAppendix{
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.publicAppendix>label{
+  width: 120px;
+  display: flex;
+  font-size: 16px;
+  padding-top: 10px;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+.publicAppendix>label svg{
+  fill: #777;
+  width: 14px;
+  height: 14px;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+.publicAppendix .publicImg .img{
+  overflow: hidden;
+}
+.publicAppendix .publicImg .img .pdf{
+  background: #fff;
+  width: 70px;
+}
+.publicAppendix .publicImg .img .pdf svg{
+  opacity: .4;
+}
+.publicMain .content2 .publicAppendix .input{
+  gap: 15px;
+  flex: 1 1;
+}  */
+
+/*publicOverlay 彈窗*/
+/* .publicOverlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+} */
+

@@ -1,0 +1,206 @@
+@media only screen and (max-width: 450px) {
+    .header-area.introduction {
+        background-image: url('../images/about-us-introduction_v2.jpg?20211125');
+        background-position: 55% center;
+    }
+}
+
+.header-area.introduction {
+    background-image: url('../images/about-us-introduction_v2.jpg');
+}
+
+
+.header-area.team-profile {
+    background-image: url('../images/about-us-team-profile_v1.jpg?20211125');
+}
+
+#main_content h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.1rem;
+    font-weight: normal;
+    font-style: normal;
+    color: #008fb3;
+}
+
+#main_content h3 {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    font-style: normal;
+    color: #232323;
+    margin-bottom: 30px;
+}
+
+.fa-mars,
+.fa-venus {
+    color: #f39e00;
+}
+
+
+.member-profile {
+    margin: 0px 3px 10vh 3px;
+    padding: 2% 2% 1% 2%;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+.member {
+    margin-bottom: 10vh;
+}
+
+.member .profile {
+    padding-bottom: 0px;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    background-color: #fff;
+    font-size: 1rem;
+
+}
+
+.member .profile:hover .profile-photo img {
+    -webkit-transition: color 0.3s ease-in-out;
+    -moz-transition: color 0.3s ease-in-out;
+    -ms-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+.member .profile-photo {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    max-height: 400px;
+    min-height: 250px;
+}
+
+.member .profile-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.member-profile h4,
+.member .profile h4 {
+    margin: 2% 0 0 0;
+    padding: 0;
+    color: #008fb3;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.member .profile h4 {
+    margin: 20px 1.8rem 0 1.8rem;
+}
+
+.member-profile h4+span,
+.member .profile h4+span {
+    color: #222222;
+    font-size: 1rem;
+}
+
+.member .profile h4+span {
+    margin: 0 1.8rem 20px 1.8rem;
+}
+
+.member-profile h5,
+.member .profile h5 {
+    margin: 0 0 20px 1.8rem;
+    padding-bottom: 0 0 15px 0;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-align: left;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+    text-decoration: none;
+    color: #222222;
+}
+
+.member-profile h5:before,
+.member .profile h5:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    max-width: 100%;
+    top: 1.6rem;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    background-color: #f39e00;
+}
+
+
+nav.sub-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-top: 50px;
+}
+
+/* .ZHAO-SU-YI-photo img {
+    object-position: 0px -130px;
+} */
+
+/* .CHEN-SHUANG-photo img {
+    object-position: 0px -40px;
+} */
+
+/*
+.LIN-YU-FEN-photo img {
+    object-position: 0 -50px;
+}
+ */
+
+
+@media only screen and (min-width: 1024px) {
+    .member .profile-photo {
+        max-height: 350px !important;
+        min-height: 150px !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container.mb-5 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .member .profile-photo {
+        max-height: 300px !important;
+        min-height: 150px !important;
+    }
+
+    .member-profile h5 {
+        margin: 0 0 20px 0px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .member .profile-photo {
+        max-height: 250px !important;
+        min-height: 150px !important;
+    }
+
+    .ZHAO-SU-YI-photo img {
+        object-position: 0px -110px;
+    }
+}

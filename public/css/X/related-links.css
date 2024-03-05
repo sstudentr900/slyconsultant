@@ -1,0 +1,23 @@
+.related-links li::before {
+    content: "";
+}
+
+.related-links li i {
+    margin-right: 1rem;
+    color: #8cc24e;
+}
+
+.related-links a {
+    text-decoration: underline;
+}
+
+.related-links a:hover {
+    color: #f39e00 !important;
+}
+
+@media only screen and (max-width: 450px) {
+    article#content ul {
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}

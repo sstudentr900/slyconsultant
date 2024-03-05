@@ -1,0 +1,25 @@
+#services img {
+    border-radius: 10px;
+    opacity: .8;
+}
+
+#services p {
+    line-height: 1.8;
+}
+
+nav.sub-nav {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#services #content h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #008fb3;
+}
+
+#services #content h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #744971;
+}

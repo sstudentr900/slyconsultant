@@ -1,0 +1,19 @@
+#news {
+    padding: 50px 3%;
+}
+
+#main_content time {
+    display: block;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    letter-spacing: 0;
+    font-weight: normal;
+    font-style: normal;
+    color: #008fb3;
+}
+
+#main_content a {
+    font-size: 1.5rem;
+}

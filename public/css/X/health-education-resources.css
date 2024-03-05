@@ -1,0 +1,43 @@
+div#health-education-resources {
+    padding: 50px 3%;
+    color: #787878;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.1rem;
+}
+
+#main_content {
+    padding: 0;
+}
+
+div.container time,
+#main_content time {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    letter-spacing: 0;
+    font-weight: normal;
+    font-style: normal;
+    color: #008fb3;
+}
+
+#main_content a {
+    font-size: 1.5rem;
+}
+
+#main_content img {
+    width: 100%;
+}
+
+div.container h3 {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    font-style: normal;
+    color: #232323;
+    margin-bottom: 30px;
+}
